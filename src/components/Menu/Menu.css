@@ -1,0 +1,33 @@
+.profile-img {
+  border: 8px solid #cbced8;
+  margin-bottom: 2rem;
+}
+.profile-picture {
+  border-bottom: 0.5px solid rgb(166, 166, 166);
+}
+
+.menu-container {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+  color: rgb(93, 92, 92);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #5891e2;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.nav-item:hover {
+  box-shadow: inset 400px 0 0 0 #92b6ee;
+}
