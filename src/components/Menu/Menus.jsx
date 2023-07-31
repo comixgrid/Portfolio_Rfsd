@@ -1,5 +1,6 @@
 import React from "react";
 import "./Menu.css";
+import { Link } from "react-router-dom";
 
 const Menus = () => {
   return (
@@ -16,24 +17,24 @@ const Menus = () => {
         </div>
         <div className="menu-container nav-items d-flex flex-column gap-3 mt-5 align-items-center text-center ">
           <div className="nav-item w-100">
-            <a className="nav-link" href="/">
+            <Link className="nav-link" to={"/"}>
               Home
-            </a>
+            </Link>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href="/about">
+            <Link className="nav-link" to={"/about"}>
               About
-            </a>
+            </Link>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href="/projects">
+            <Link className="nav-link" to={"/projects"}>
               Projects
-            </a>
+            </Link>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href="/contact">
+            <Link className="nav-link" to={"/contact"}>
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
