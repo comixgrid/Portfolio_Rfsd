@@ -16,22 +16,22 @@ const Menus = () => {
         </div>
         <div className="menu-container nav-items d-flex flex-column gap-3 mt-5 align-items-center text-center ">
           <div className="nav-item w-100">
-            <a className="nav-link" href={"/"}>
+            <a className="nav-link" href="/">
               Home
             </a>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href={"/about"}>
+            <a className="nav-link" href="/about">
               About
             </a>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href={"/projects"}>
+            <a className="nav-link" href="/projects">
               Projects
             </a>
           </div>
           <div className="nav-item w-100">
-            <a className="nav-link" href={"/contact"}>
+            <a className="nav-link" href="/contact">
               Contact
             </a>
           </div>
