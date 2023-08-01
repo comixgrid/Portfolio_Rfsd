@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Home from "../../pages/home/Home";
 import "./Layout.css";
 import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 import Menus from "../Menu/Menus";
@@ -30,7 +29,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
         </div>
-        <div className="w-100 position-relative  ">
+        <div className="w-100 position-relative z-0">
           <main>{children}</main>
         </div>
       </div>

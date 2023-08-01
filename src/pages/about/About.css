@@ -4,9 +4,34 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .about-content {
     display: flex;
     flex-direction: column-reverse;
   }
+  .about-pic {
+    margin-top: 5px !important;
+  }
+}
+.about-me {
+  text-align: justify;
+  padding: 0 2rem 0 2rem;
+  vertical-align: middle;
+  font-size: 1.3rem;
+  color: grey;
+  font-family: cursive;
+}
+
+.about-content {
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  gap: 1rem;
+  padding: 0 !important;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 1rem;
+}
+
+.about-pic {
+  width: auto;
 }

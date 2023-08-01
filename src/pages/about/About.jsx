@@ -7,11 +7,11 @@ const About = () => {
   return (
     <>
       <Layout>
-        <div className="about-page mobile-view visible-lg mt-4 h-100 ">
-          <div className="row about-content col-md-12 mt-4 d-flex justify-content-center">
-            <div className="col-md-6 text-center">
+        <div className="about-page mobile-view visible-lg mt-4">
+          <div className="row about-content col-md-11 d-flex justify-content-center mb-3">
+            <div className="col-md-6 text-center d-inline ">
               <h2>About Me</h2>
-              <p className="text-justify">
+              <p className="about-me">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 blanditiis ipsum temporibus hic esse. Facilis quae inventore
                 mollitia fugiat. Reiciendis, veritatis. Quos aliquid, quae
@@ -23,7 +23,7 @@ const About = () => {
                 amet consectetur adipisicing elit. Corporis corrupti
               </p>
             </div>
-            <div className="col-md-6 mt-5 d-flex justify-content-center">
+            <div className="col-md-5 justify-content-center about-pic d-inline ">
               <img
                 src={imgag}
                 alt=""
