@@ -1,0 +1,32 @@
+.contact-page {
+  height: 100vh;
+  background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+  .contact-page {
+    margin-left: 300px;
+  }
+}
+.form-container {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.form-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.form-container > div > input {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-container > p {
+  font: 300 3rem cursive;
+  text-align: center;
+}

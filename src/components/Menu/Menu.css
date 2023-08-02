@@ -26,7 +26,7 @@
   box-shadow: inset 0 0 0 0 #5891e2;
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
+  transition: ease-out 0.5s;
 }
 
 .nav-item:hover {

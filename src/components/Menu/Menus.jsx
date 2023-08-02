@@ -2,7 +2,7 @@ import React from "react";
 import "./Menu.css";
 import { Link } from "react-router-dom";
 
-const Menus = () => {
+const Menus = ({ onClose }) => {
   return (
     <>
       <div className="menu d-flex flex-column">
@@ -16,22 +16,27 @@ const Menus = () => {
           />
         </div>
         <div className="menu-container nav-items d-flex flex-column gap-3 mt-5 align-items-center text-center ">
-          <div className="nav-item w-100">
+          <div className="nav-item w-100" onClick={onClose}>
             <Link className="nav-link" to={"/"}>
               Home
             </Link>
           </div>
           <div className="nav-item w-100">
-            <Link className="nav-link" to={"/about"}>
+            <Link className="nav-link" to={"/about"} onClick={onClose}>
               About
             </Link>
           </div>
-          <div className="nav-item w-100">
+          <div className="nav-item w-100" onClick={onClose}>
+            <Link className="nav-link" to={"/tech"}>
+              TechStack
+            </Link>
+          </div>
+          <div className="nav-item w-100" onClick={onClose}>
             <Link className="nav-link" to={"/projects"}>
               Projects
             </Link>
           </div>
-          <div className="nav-item w-100">
+          <div className="nav-item w-100" onClick={onClose}>
             <Link className="nav-link" to={"/contact"}>
               Contact
             </Link>

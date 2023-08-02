@@ -7,11 +7,19 @@ const About = () => {
   return (
     <>
       <Layout>
-        <div className="about-page mobile-view visible-lg mt-4">
-          <div className="row about-content col-md-11 d-flex justify-content-center mb-3">
-            <div className="col-md-6 text-center d-inline ">
-              <h2>About Me</h2>
-              <p className="about-me">
+        <div className="about-page mobile-view visible-lg mt-4 overflow-hidden  ">
+          <div className="row about-content d-flex justify-content-center">
+            <h2>About Me</h2>{" "}
+            <div className="col-md-5 col-xl-5 col-lg-5 col-xs-12 justify-content-center about-pic d-inline ">
+              <img
+                src={imgag}
+                alt="profile pic"
+                height="400px"
+                className="img-sc rounded w-100"
+              />
+            </div>
+            <div className="col-md-6 col-md-6 col-xl-6 col-lg-6 col-xs-12 text-center d-inline ">
+              <p className="about-me ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
                 blanditiis ipsum temporibus hic esse. Facilis quae inventore
                 mollitia fugiat. Reiciendis, veritatis. Quos aliquid, quae
@@ -22,14 +30,6 @@ const About = () => {
                 sint magnam earum beatae nam distinctio. Lorem ipsum dolor, sit
                 amet consectetur adipisicing elit. Corporis corrupti
               </p>
-            </div>
-            <div className="col-md-5 justify-content-center about-pic d-inline ">
-              <img
-                src={imgag}
-                alt=""
-                height="400px"
-                className="img-sc rounded"
-              />
             </div>
           </div>
         </div>

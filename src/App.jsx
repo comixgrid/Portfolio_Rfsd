@@ -1,10 +1,9 @@
-import "./App.css";
-import Layout from "./components/Layout/Layout";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
+import TechStack from "./pages/techstack/TechStack";
 
 function App() {
   return (
@@ -12,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/tech" element={<TechStack />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>

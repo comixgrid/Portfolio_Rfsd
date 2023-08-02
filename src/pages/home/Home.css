@@ -1,5 +1,4 @@
 .home-page {
-  position: relative;
   height: 100vh;
   background-image: url("../../assets/background.jpg");
   background-repeat: no-repeat;
@@ -39,6 +38,12 @@
   justify-content: center;
 }
 
+.button-container > button:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.5s;
+}
+
 .social-media > a {
   border: 2px solid white;
   border-radius: 50%;
@@ -47,5 +52,20 @@
 }
 
 .social-media {
+  display: flex;
+  justify-content: center;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.social-media > a {
+  animation: iconUP 0.7s linear infinite alternate;
+}
+
+@keyframes iconUP {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.social-media:hover {
+  transition: 1s;
 }

@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Layout>
-        <div className="home-page mobile-view visible-lg">
+        <div className="home-page mobile-view visible-lg overflow-hidden ">
           <div className="home-container ">
             <div className="content-container d-flex flex-column text-center ">
               <h2 className="hi-class d-inline ">Hi, I am a</h2>&nbsp;
@@ -35,10 +35,7 @@ const Home = () => {
             </div>
           </div>
           <div className="button-container text-center gap-4 mt-2 z-1">
-            <button
-              type="button"
-              className="btn btn-outline-danger btn-lg text-white"
-            >
+            <button type="button" className="btn btn-danger btn-lg text-white">
               Hire Me
             </button>
             <a
@@ -51,13 +48,22 @@ const Home = () => {
             </a>
           </div>
           <div className="social-media d-flex justify-content-center gap-3 mt-5">
-            <a className="btn btn-outline-primary">
+            <a
+              className="btn btn-outline-primary"
+              style={{ animationDelay: "0.3s" }}
+            >
               <BiLogoFacebook size={30} />
             </a>
-            <a className="btn btn-outline-danger">
+            <a
+              className="btn btn-outline-danger"
+              style={{ animationDelay: "0.5s" }}
+            >
               <BsInstagram size={30} />
             </a>
-            <a className="btn btn-outline-secondary">
+            <a
+              className="btn btn-outline-secondary"
+              style={{ animationDelay: "0.7s" }}
+            >
               <BsGithub size={30} />
             </a>
           </div>
