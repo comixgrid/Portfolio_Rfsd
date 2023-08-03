@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="d-flex">
-        <div className="sidebar-section d-flex position-absolute z-1">
+        <div className="sidebar-section d-flex position-absolute z-1 ">
           <div className="whole-iconbar">
             <div className="toggle-icons d-block d-lg-none position-fixed z-1">
               <p onClick={handleToggler} className="border border-4 ">
@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
             </div>
           </div>
           <div
+            id={theme}
             className={
               toggle ? "sidebar whole-iconbar " : "sidebar d-none d-lg-block "
             }
