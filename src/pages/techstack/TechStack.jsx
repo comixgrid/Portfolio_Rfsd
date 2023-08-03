@@ -26,8 +26,8 @@ const TechStack = () => {
             </h5>
             <div className="tech-container row">
               {TechstackList.map((T) => (
-                <Fade left>
-                  <div key={T._id} className="col-md-3">
+                <Fade left key={T._id}>
+                  <div className="col-md-3">
                     <div className="card m-1 p-2">
                       <div className="card-content">
                         <div className="card-body">
