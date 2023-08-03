@@ -1,9 +1,12 @@
 .home-page {
   height: 100vh;
-  background-color: rgb(40, 2, 40);
+  /* background-color: rgb(40, 2, 40); */
+  background-image: url("../../assets/design2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  opacity: 90%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media screen and (min-width: 992px) {
@@ -22,12 +25,17 @@
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-transform: capitalize;
+  background: #cae4e6;
+  background: linear-gradient(to top right, #cae4e6 43%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .hi-class {
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 2.2rem;
   color: cyan;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 .button-container {
   display: flex;

@@ -32,3 +32,7 @@
 .nav-item:hover {
   box-shadow: inset 400px 0 0 0 #92b6ee;
 }
+
+.nav-link {
+  font-size: 1rem;
+}

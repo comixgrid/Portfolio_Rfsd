@@ -19,3 +19,13 @@ Dark theme */
   height: 100%;
   background-position: center;
 }
+
+/* education style */
+
+.vertical-timeline-element-title {
+  color: rgb(39, 255, 133);
+}
+
+.vertical-timeline-element-subtitle {
+  color: white;
+}

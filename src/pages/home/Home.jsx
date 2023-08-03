@@ -6,6 +6,8 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import Layout from "../../components/Layout/Layout";
 import { useTheme } from "../../context/ThemeContext";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Zoom";
 
 const Home = () => {
   const theme = useTheme();
@@ -16,7 +18,10 @@ const Home = () => {
         <div className="home-page mobile-view visible-lg overflow-hidden ">
           <div className="home-container ">
             <div className="content-container d-flex flex-column text-center ">
-              <h2 className="hi-class d-inline ">Hi, I am a</h2>&nbsp;
+              <Fade left cascade>
+                <h2 className="hi-class d-inline ">Hi, I am a</h2>
+              </Fade>
+              &nbsp;
               <h2 className="typewriter-effect d-inline display-4">
                 <Typewriter
                   options={{
@@ -30,11 +35,15 @@ const Home = () => {
                   }}
                 />
               </h2>
-              <span className="text-white text-justify fs-4 p-2  ">
-                I am a frontend web developer. I can provide clean code and
-                pixel perfect design. I also make website more & more
-                interactive with web animations.
-              </span>
+              <Zoom left cascade>
+                <span className="text-white text-justify fs-5 px-3  mt-3 mb-4">
+                  Innovative Full Stack Web Developer skilled in HTML, CSS,
+                  JavaScript, Node.js, MongoDB, React.js, and more. Expert in
+                  APIs, Material UI, Bootstrap, Tailwind CSS. Exploring React
+                  Native and Next.js for mobile and server-side brilliance.
+                  Passionate about creating exceptional web experiences.
+                </span>
+              </Zoom>
             </div>
           </div>
           <div className="button-container text-center gap-4 mt-2 z-1">

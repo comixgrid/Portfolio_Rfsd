@@ -4,6 +4,7 @@ import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 import Menus from "../Menu/Menus";
 import { useTheme } from "../../context/ThemeContext.jsx";
 import { BsMoonStarsFill, BsSun } from "react-icons/bs";
+import Slide from "react-reveal/Slide";
 
 const Layout = ({ children }) => {
   const [theme, setTheme] = useTheme();
@@ -36,29 +37,34 @@ const Layout = ({ children }) => {
               </p>
             </div>
           </div>
-          <div
-            id={theme}
-            className={
-              toggle ? "sidebar whole-iconbar " : "sidebar d-none d-lg-block "
-            }
-          >
-            <Menus onClose={handleClose} />
-          </div>
+          <Slide left>
+            <div
+              id={theme}
+              className={
+                toggle ? "sidebar whole-iconbar " : "sidebar d-none d-lg-block "
+              }
+            >
+              <Menus onClose={handleClose} />
+            </div>
+          </Slide>
         </div>
-
         <div className="w-100 position-relative z-0" onClose={handleClose}>
           <main>
-            <div id={theme}>{children}</div>
+            <div id={theme} onClick={handleClose}>
+              {children}
+            </div>
           </main>
         </div>
       </div>
-      <button className="theme-btn" onClick={handleTheme}>
-        {theme === "light" ? (
-          <BsMoonStarsFill size={30} />
-        ) : (
-          <BsSun size={30} color="white" />
-        )}
-      </button>
+      <Slide right>
+        <button className="theme-btn border " onClick={handleTheme}>
+          {theme === "light" ? (
+            <BsMoonStarsFill size={30} />
+          ) : (
+            <BsSun size={30} color="white" />
+          )}
+        </button>
+      </Slide>
     </>
   );
 };

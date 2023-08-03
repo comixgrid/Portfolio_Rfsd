@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../../components/Layout/Layout";
 import "./About.css";
 import imgag from "../../assets/1680203081838.jpg";
+import Education from "../education/Education";
+import Jello from "react-reveal/Jello";
 
 const About = () => {
   return (
@@ -9,29 +11,44 @@ const About = () => {
       <Layout>
         <div className="about-page mobile-view visible-lg  overflow-hidden  ">
           <div className="row about-content d-flex justify-content-center">
-            <h2>About Me</h2>{" "}
+            <Jello>
+              <h2
+                className="border-bottom pb-2 "
+                style={{ fontFamily: "poppins" }}
+              >
+                About Me
+              </h2>
+            </Jello>
             <div className="col-md-5 col-xl-5 col-lg-5 col-xs-12 justify-content-center about-pic d-inline ">
               <img
                 src={imgag}
                 alt="profile pic"
-                height="400px"
+                height="430px"
                 className="img-sc rounded w-100"
               />
             </div>
             <div className="col-md-6 col-md-6 col-xl-6 col-lg-6 col-xs-12 text-center d-inline ">
               <p className="about-me ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                blanditiis ipsum temporibus hic esse. Facilis quae inventore
-                mollitia fugiat. Reiciendis, veritatis. Quos aliquid, quae
-                asperiores doloribus reprehenderit itaque sapiente repellat!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-                necessitatibus blanditiis, commodi praesentium quas cupiditate
-                harum odio quasi eius, nam earum veritatis libero? Perspiciatis
-                sint magnam earum beatae nam distinctio. Lorem ipsum dolor, sit
-                amet consectetur adipisicing elit. Corporis corrupti
+                Hi there, I am a driven Full Stack Web Developer with experience
+                in HTML, CSS, and JavaScript who is about to graduate from
+                Computer Science and Engineering (2024). I've worked with
+                Node.js, MongoDB, React.js, Express.js, MySQL, and Passport.js
+                firsthand. I am skilled at integrating external services into
+                web projects using APIs.
+                <br />
+                <br />
+                Using Material UI, Bootstrap, and Tailwind CSS, I take
+                satisfaction in creating visually beautiful and user-centric
+                experiences. As a self-starter, I'm now investigating React
+                Native for mobile app development and Next.js for optimal
+                server-side rendering. I am enthusiastic to contribute my
+                abilities to the development of creative and meaningful
+                initiatives, with a strong emphasis on creating outstanding web
+                experiences.
               </p>
             </div>
           </div>
+          <Education />
         </div>
       </Layout>
     </>

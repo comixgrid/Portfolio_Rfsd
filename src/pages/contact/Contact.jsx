@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
 import "../contact/Contact.css";
+import Jump from "react-reveal/Jump";
 
 const Contact = () => {
   return (
@@ -9,9 +10,11 @@ const Contact = () => {
         <div className="contact-container d-flex flex-column w-100 justify-content-center align-items-center ">
           <form
             action=""
-            className="form-container d-flex flex-column justify-content-center gap-3 w-75"
+            className="form-container d-flex flex-column justify-content-center gap-3 w-75 col-md-12"
           >
-            <p>Contact Me👍</p>
+            <Jump>
+              <p>Contact Me👍</p>
+            </Jump>
             <div>
               <label htmlFor="name">Name</label>
               <input
@@ -41,7 +44,7 @@ const Contact = () => {
             <input
               type="button"
               value="Submit"
-              className="btn btn-outline-danger   p-3"
+              className="btn btn-danger p-3 fs-4 "
             />
           </form>
         </div>
