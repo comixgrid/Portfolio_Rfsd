@@ -5,8 +5,11 @@ import CV from "../../assets/document/Maniruddin.pdf";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import Layout from "../../components/Layout/Layout";
+import { useTheme } from "../../context/ThemeContext";
 
 const Home = () => {
+  const theme = useTheme();
+
   return (
     <>
       <Layout>

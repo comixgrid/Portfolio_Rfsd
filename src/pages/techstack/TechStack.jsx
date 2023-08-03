@@ -6,7 +6,7 @@ import { TechstackList } from "./../../utils/Tech.js";
 const TechStack = () => {
   return (
     <Layout>
-      <div className="tech-stack mobile-view visible-lg overflow-hidden ">
+      <div className="tech-stack mobile-view visible-lg overflow-hidden mb-2">
         <div className="row stack-container">
           <h4 style={{ textAlign: "center" }}>
             Programing languages, Frameworks, Databases, Front-end & Back-end

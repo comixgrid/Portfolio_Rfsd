@@ -2,8 +2,12 @@ import React, { useState } from "react";
 import "./Layout.css";
 import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 import Menus from "../Menu/Menus";
+import { useTheme } from "../../context/ThemeContext.jsx";
+import { BsMoonStarsFill, BsSun } from "react-icons/bs";
 
 const Layout = ({ children }) => {
+  const [theme, setTheme] = useTheme();
+
   const [toggle, setToggle] = useState(false);
 
   const handleToggler = () => {
@@ -11,6 +15,10 @@ const Layout = ({ children }) => {
   };
   const handleClose = () => {
     setToggle(false);
+  };
+
+  const handleTheme = () => {
+    setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
   };
 
   return (
@@ -36,10 +44,20 @@ const Layout = ({ children }) => {
             <Menus onClose={handleClose} />
           </div>
         </div>
+
         <div className="w-100 position-relative z-0" onClose={handleClose}>
-          <main>{children}</main>
+          <main>
+            <div id={theme}>{children}</div>
+          </main>
         </div>
       </div>
+      <button className="theme-btn" onClick={handleTheme}>
+        {theme === "light" ? (
+          <BsMoonStarsFill size={30} />
+        ) : (
+          <BsSun size={30} color="white" />
+        )}
+      </button>
     </>
   );
 };

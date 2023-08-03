@@ -6,3 +6,15 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+/* 
+Dark theme */
+
+#dark {
+  background-color: rgb(40, 2, 40) !important;
+  color: white !important;
+  z-index: 2;
+  margin-bottom: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}

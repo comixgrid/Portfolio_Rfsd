@@ -7,7 +7,7 @@ const About = () => {
   return (
     <>
       <Layout>
-        <div className="about-page mobile-view visible-lg mt-4 overflow-hidden  ">
+        <div className="about-page mobile-view visible-lg  overflow-hidden  ">
           <div className="row about-content d-flex justify-content-center">
             <h2>About Me</h2>{" "}
             <div className="col-md-5 col-xl-5 col-lg-5 col-xs-12 justify-content-center about-pic d-inline ">

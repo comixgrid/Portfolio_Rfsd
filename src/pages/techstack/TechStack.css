@@ -11,6 +11,13 @@
 
 .tech-container .card {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  animation: cardUP 0.7s linear infinite alternate;
+}
+
+@keyframes cardUP {
+  to {
+    transform: translate(-10px);
+  }
 }
 
 .tech-container .card:hover {
