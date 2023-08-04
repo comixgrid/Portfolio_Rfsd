@@ -19,7 +19,6 @@ const Education = () => {
         <h2 className="border-bottom pb-2 " style={{ fontFamily: "monospace" }}>
           Education
         </h2>
-        {console.log(Edutheme)}
         <VerticalTimeline>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
