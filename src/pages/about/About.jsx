@@ -23,7 +23,7 @@ const About = () => {
               <img
                 src={imgag}
                 alt="profile pic"
-                height="430px"
+                height="400px"
                 className="img-sc rounded w-100"
               />
             </div>

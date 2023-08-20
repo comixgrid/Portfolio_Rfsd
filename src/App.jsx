@@ -4,6 +4,9 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
 import TechStack from "./pages/techstack/TechStack";
+import axios from "axios";
+
+axios.defaults.baseURL = "http://localhost:8000";
 
 function App() {
   return (

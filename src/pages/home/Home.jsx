@@ -4,10 +4,12 @@ import Typewriter from "typewriter-effect";
 import CV from "../../assets/document/Maniruddin.pdf";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BsInstagram, BsGithub } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 import Layout from "../../components/Layout/Layout";
 import { useTheme } from "../../context/ThemeContext";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const theme = useTheme();
@@ -47,9 +49,15 @@ const Home = () => {
             </div>
           </div>
           <div className="button-container text-center gap-4 mt-2 z-1">
-            <button type="button" className="btn btn-danger btn-lg text-white">
+            <a
+              type="button"
+              className="btn btn-danger btn-lg text-white"
+              href="https://api.whatsapp.com/send?phone=8617559654"
+              rel="norefferer"
+              target="_blank"
+            >
               Hire Me
-            </button>
+            </a>
             <a
               type="button"
               href={CV}
@@ -63,20 +71,34 @@ const Home = () => {
             <a
               className="btn btn-outline-primary"
               style={{ animationDelay: "0.3s" }}
+              href="https://www.facebook.com/maniruddin.khan.35/"
+              target="blank"
             >
               <BiLogoFacebook size={30} />
             </a>
             <a
               className="btn btn-outline-danger"
               style={{ animationDelay: "0.5s" }}
+              href="https://www.instagram.com/ig_mk_techeduhelper/"
+              target="blank"
             >
               <BsInstagram size={30} />
             </a>
             <a
               className="btn btn-outline-secondary"
               style={{ animationDelay: "0.7s" }}
+              href="https://github.com/techeduhelper"
+              target="blank"
             >
               <BsGithub size={30} />
+            </a>
+            <a
+              className="btn btn-outline-primary"
+              style={{ animationDelay: "0.7s" }}
+              href="https://www.linkedin.com/in/maniruddin-khan/"
+              target="blank"
+            >
+              <AiFillLinkedin size={30} />
             </a>
           </div>
         </div>
