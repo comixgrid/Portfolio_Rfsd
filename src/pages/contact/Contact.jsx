@@ -22,10 +22,14 @@ const Contact = () => {
         email,
         message,
       });
-      toast.success("Now you are connected");
-      setName("");
-      setEmail("");
-      setMessage("");
+      if (res.data.message === "Email sent successfully") {
+        alert("Email sent successfully");
+        setName("");
+        setEmail("");
+        setMessage("");
+      } else {
+        alert("An error occurred while sending the email");
+      }
     } catch (error) {
       console.log("Error", error);
       toast.error("An error occurred while sending the email");

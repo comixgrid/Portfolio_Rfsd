@@ -6,7 +6,7 @@ import Projects from "./pages/projects/Projects";
 import TechStack from "./pages/techstack/TechStack";
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://porfolio-backend-8520.onrender.com";
 
 function App() {
   return (
