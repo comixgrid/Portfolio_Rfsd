@@ -13,7 +13,7 @@ import Bounce from "react-reveal/Bounce";
 const Experience = () => {
   return (
     <>
-      <div className="row about-content d-flex justify-content-center mt-3">
+      <div className="row about-content d-flex justify-content-center">
         <Bounce right cascade>
           <h2
             className="border-bottom pb-2 "

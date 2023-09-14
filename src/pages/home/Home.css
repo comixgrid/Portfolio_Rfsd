@@ -1,12 +1,7 @@
 .home-page {
-  height: 100vh;
-  /* background-color: rgb(40, 2, 40); */
-  background-image: url("../../assets/design2.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 80vh;
   background-position: center;
-  opacity: 90%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 120%;
 }
 
 @media screen and (min-width: 992px) {
@@ -54,13 +49,11 @@
   border: 2px solid white;
   border-radius: 50%;
   padding: 8px;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .social-media > a {
   animation: iconUP 0.7s linear infinite alternate;
