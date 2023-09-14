@@ -1,10 +1,14 @@
 import React from "react";
 import "./About.css";
-import imgag from "../../assets/1680203081838.jpg";
+import imgag from "../../assets/about.jpg";
 import Education from "../education/Education";
 import Jello from "react-reveal/Jello";
+import anime from "animejs/lib/anime.es.js";
 
 const About = () => {
+
+
+  
   return (
     <>
       <div className="about-page mobile-view visible-lg  overflow-hidden  ">

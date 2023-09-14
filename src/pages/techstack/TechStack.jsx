@@ -13,7 +13,10 @@ const TechStack = () => {
           <Slide right cascade>
             <h1 className="border-bottom pb-2 ">Technologies Stack</h1>
           </Slide>
-          <h5 style={{ textAlign: "center" }} className="p-1 project-heading">
+          <h5
+            style={{ textAlign: "center", fontFamily: "cursive" }}
+            className="p-1 project-heading"
+          >
             Programing languages, Frameworks, Databases, Front-end & Back-end
             tools, and APIs
           </h5>

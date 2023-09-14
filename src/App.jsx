@@ -5,19 +5,18 @@ import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
 import TechStack from "./pages/techstack/TechStack";
 import axios from "axios";
+import Layout from "./components/Layout/Layout";
 
 axios.defaults.baseURL = "https://porfolio-backend-8520.onrender.com";
 
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/tech" element={<TechStack />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Layout>
     </>
   );
 }
