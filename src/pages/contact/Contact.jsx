@@ -38,11 +38,11 @@ const Contact = () => {
 
   return (
     <Layout>
-      <div className="contact-page mobile-view visible-lg overflow-x-hidden d-flex justify-content-center">
+      <div className="contact-page mobile-view visible-lg overflow-x-hidden d-flex  flex-column justify-content-center align-items-center">
         <div className="contact-container d-flex flex-column w-100 justify-content-center align-items-center ">
           <form
             onSubmit={handleSubmit}
-            className="form-container d-flex flex-column justify-content-center gap-3 w-75 col-md-12"
+            className="form-container d-flex flex-column justify-content-center gap-3 w-75 col-md-12 mb-5"
           >
             <Jump>
               <p>Contact Me👍</p>
@@ -79,11 +79,12 @@ const Contact = () => {
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-danger p-3 fs-4 ">
+            <button type="submit" className="btn btn-danger p-2 fs-4 ">
               Send Message
             </button>
           </form>
         </div>
+        <div className="mt-5">All rights reserved techeduhelper @2023</div>
       </div>
     </Layout>
   );

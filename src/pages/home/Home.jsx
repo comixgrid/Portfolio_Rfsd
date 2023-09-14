@@ -10,6 +10,11 @@ import { useTheme } from "../../context/ThemeContext";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 import { Link } from "react-router-dom";
+import About from "../about/About";
+import TechStack from "../techstack/TechStack";
+import Experience from "../experience/Experience";
+import Projects from "../projects/Projects";
+import Contact from "../contact/Contact";
 
 const Home = () => {
   const theme = useTheme();
@@ -39,11 +44,8 @@ const Home = () => {
               </h2>
               <Zoom left cascade>
                 <span className="text-white text-justify fs-5 px-3  mt-3 mb-4">
-                  Innovative Full Stack Web Developer skilled in HTML, CSS,
-                  JavaScript, Node.js, MongoDB, React.js, and more. Expert in
-                  APIs, Material UI, Bootstrap, Tailwind CSS. Exploring React
-                  Native and Next.js for mobile and server-side brilliance.
-                  Passionate about creating exceptional web experiences.
+                  Full Stack Web Developer skilled in HTML, CSS, JavaScript,
+                  Node.js, MongoDB, React.js, and more.
                 </span>
               </Zoom>
             </div>
@@ -102,6 +104,10 @@ const Home = () => {
             </a>
           </div>
         </div>
+        <About />
+        <TechStack />
+        <Projects />
+        <Contact />
       </Layout>
     </>
   );

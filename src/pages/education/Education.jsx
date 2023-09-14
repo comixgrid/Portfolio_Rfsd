@@ -13,7 +13,7 @@ const Education = () => {
   return (
     <>
       <div
-        className="row about-content d-flex justify-content-center mt-1"
+        className="row about-content d-flex justify-content-center"
         id={Edutheme}
       >
         <h2 className="border-bottom pb-2 " style={{ fontFamily: "monospace" }}>
