@@ -3,15 +3,15 @@ import "./About.css";
 import imgag from "../../assets/about.jpg";
 import Education from "../education/Education";
 import Jello from "react-reveal/Jello";
-import anime from "animejs/lib/anime.es.js";
 
-const About = () => {
-
-
-  
+const About = ({ isActive }) => {
   return (
     <>
-      <div className="about-page mobile-view visible-lg  overflow-hidden  ">
+      <div
+        className="about-page mobile-view visible-lg  overflow-hidden  "
+        style={{ display: isActive ? "block" : "none" }}
+        id="about"
+      >
         <div className="row about-content d-flex justify-content-center">
           <Jello>
             <h2

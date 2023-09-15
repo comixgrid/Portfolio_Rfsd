@@ -5,9 +5,13 @@ import Experience from "../experience/Experience";
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 
-const TechStack = () => {
+const TechStack = ({ isActive }) => {
   return (
-    <div className="tech-stack mobile-view visible-lg overflow-hidden d-flex justify-content-center flex-column ">
+    <div
+      className="tech-stack mobile-view visible-lg overflow-hidden d-flex justify-content-center flex-column "
+      style={{ display: isActive ? "block" : "none" }}
+      id="exprience"
+    >
       <div className="row about-content d-flex justify-content-center align-items-center">
         <div className="row stack-container w-100 ">
           <Slide right cascade>

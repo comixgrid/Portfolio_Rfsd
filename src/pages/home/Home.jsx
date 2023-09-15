@@ -5,21 +5,20 @@ import CV from "../../assets/document/Maniruddin.pdf";
 import { BiLogoFacebook } from "react-icons/bi";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
-import Layout from "../../components/Layout/Layout";
 import { useTheme } from "../../context/ThemeContext";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
-import About from "../about/About";
-import TechStack from "../techstack/TechStack";
-import Projects from "../projects/Projects";
-import Contact from "../contact/Contact";
 
-const Home = () => {
+const Home = ({ isActive }) => {
   const theme = useTheme();
 
   return (
     <>
-      <div className="home-page mobile-view visible-lg overflow-hidden ">
+      <div
+        className="home-page mobile-view visible-lg overflow-hidden "
+        style={{ display: isActive ? "block" : "none" }}
+        id="home"
+      >
         <div className="home-container ">
           <div className="content-container d-flex flex-column text-center ">
             <Fade left cascade>
@@ -101,10 +100,6 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <About />
-      <TechStack />
-      <Projects />
-      <Contact />
     </>
   );
 };

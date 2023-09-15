@@ -10,13 +10,17 @@ import linkedin from "../../assets/linkedin.jpg";
 import quiz from "../../assets/quiz.jpg";
 import Slide from "react-reveal/Slide";
 
-const Projects = () => {
+const Projects = (isActive) => {
   return (
     <>
-      <div className="project-page mobile-view visible-lg overflow-hidden ">
+      <div
+        className="project-page mobile-view visible-lg overflow-hidden "
+        style={{ display: isActive ? "block" : "none" }}
+        id="projects"
+      >
         <div className="row about-content d-flex  mt-3">
-          <h2 className="col-12 mt-3 text-center capitalize">
-            TOP RECENT PROJECTS
+          <h2 className="col-12 mt-3 text-center text-capitalize">
+            Top Recent Projects
           </h2>
           <Slide right cascade>
             <div className="col-md-4">
