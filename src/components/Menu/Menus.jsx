@@ -2,8 +2,15 @@ import React from "react";
 import "./Menu.css";
 import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
+import { useState } from "react";
 
-const Menus = ({ onClose }) => {
+const Menus = ({
+  homePage,
+  aboutPage,
+  expriencePage,
+  projectsPage,
+  contactPage,
+}) => {
   return (
     <>
       <div className="menu d-flex flex-column">
@@ -19,30 +26,20 @@ const Menus = ({ onClose }) => {
         </Zoom>
 
         <div className="menu-container nav-items d-flex flex-column gap-3 mt-5 align-items-center text-center ">
-          <div className="nav-item w-100" onClick={onClose}>
-            <Link className="nav-link" to={"/"}>
-              Home
-            </Link>
+          <div className="nav-item w-100" onClick={homePage}>
+            <Link className="nav-link">Home</Link>
           </div>
-          <div className="nav-item w-100">
-            <Link className="nav-link" to={"/about"} onClick={onClose}>
-              About-Education
-            </Link>
+          <div className="nav-item w-100" onClick={aboutPage}>
+            <Link className="nav-link">About-Education</Link>
           </div>
-          <div className="nav-item w-100" onClick={onClose}>
-            <Link className="nav-link" to={"/tech"}>
-              TechStack-Experience
-            </Link>
+          <div className="nav-item w-100" onClick={expriencePage}>
+            <Link className="nav-link">TechStack-Experience</Link>
           </div>
-          <div className="nav-item w-100" onClick={onClose}>
-            <Link className="nav-link" to={"/projects"}>
-              Projects
-            </Link>
+          <div className="nav-item w-100" onClick={projectsPage}>
+            <Link className="nav-link">Projects</Link>
           </div>
-          <div className="nav-item w-100" onClick={onClose}>
-            <Link className="nav-link" to={"/contact"}>
-              Contact
-            </Link>
+          <div className="nav-item w-100" onClick={contactPage}>
+            <Link className="nav-link">Contact</Link>
           </div>
         </div>
       </div>

@@ -1,6 +1,20 @@
 .home-page {
-  height: 80vh;
+  min-height: 100vh;
   background-position: center;
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   opacity: 120%;
 }
 
@@ -20,11 +34,16 @@
   color: rgb(255, 255, 255);
   font-weight: 600;
   text-transform: capitalize;
-  background: #cae4e6;
-  background: linear-gradient(to top right, #cae4e6 43%, #ffffff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
+
+.typewriter-effect-light {
+  font-family: "Poppins", sans-serif;
+  color: rgb(70, 0, 87);
+  background-color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
 .hi-class {
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
