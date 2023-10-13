@@ -4,6 +4,11 @@
   }
 }
 
+.project-contain {
+  width: 100%;
+  
+}
+
 .project {
   margin: 50px 0px;
   margin-left: 140px;

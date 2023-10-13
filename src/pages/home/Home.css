@@ -1,21 +1,11 @@
 .home-page {
-  min-height: 100vh;
-  background-position: center;
-  background: #0f0c29; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #24243e,
-    #302b63,
-    #0f0c29
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  min-height: 40vh;
+  padding-bottom: 40px;
   opacity: 120%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
 }
 
 @media screen and (min-width: 992px) {
@@ -25,13 +15,19 @@
 }
 
 .content-container {
-  padding-top: 200px;
-  filter: brightness(100%);
+  padding-top: 100px;
+  filter: brightness(120%);
+  display: flex;
+  align-items: flex-start;
+}
+
+.home-container {
+  text-align: left;
 }
 
 .typewriter-effect {
   font-family: "Poppins", sans-serif;
-  color: rgb(255, 255, 255);
+  color: rgb(247, 251, 0);
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -39,7 +35,6 @@
 .typewriter-effect-light {
   font-family: "Poppins", sans-serif;
   color: rgb(70, 0, 87);
-  background-color: black;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -48,9 +43,18 @@
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   font-size: 2.2rem;
-  color: cyan;
+  color: rgb(76, 242, 10);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
+
+.hi-class-light {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  color: rgb(75, 7, 75);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
 .button-container {
   display: flex;
   flex-direction: row;
@@ -86,4 +90,9 @@
 
 .social-media:hover {
   transition: 1s;
+}
+
+.text-position {
+  text-align: start;
+  padding-right: 30px;
 }

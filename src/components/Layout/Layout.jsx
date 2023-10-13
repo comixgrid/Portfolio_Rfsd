@@ -27,27 +27,11 @@ const Layout = ({ children }) => {
     setTheme((prevState) => (prevState === "light" ? "dark" : "light"));
   };
 
-  // for active component id
-  const [activeComponentId, setActiveComponentId] = useState("home");
-
-  const homePage = () => {
-    setActiveComponentId("home");
-    handleClose();
-  };
-  const aboutPage = () => {
-    setActiveComponentId("about");
-    handleClose();
-  };
-  const expriencePage = () => {
-    setActiveComponentId("exprience");
-    handleClose();
-  };
-  const projectsPage = () => {
-    setActiveComponentId("projects");
-    handleClose();
-  };
-  const contactPage = () => {
-    setActiveComponentId("contact");
+  const scrollToComponent = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
     handleClose();
   };
 
@@ -73,24 +57,18 @@ const Layout = ({ children }) => {
                 toggle ? "sidebar whole-iconbar " : "sidebar d-none d-lg-block "
               }
             >
-              <Menus
-                homePage={homePage}
-                aboutPage={aboutPage}
-                expriencePage={expriencePage}
-                projectsPage={projectsPage}
-                contactPage={contactPage}
-              />
+              <Menus scrollToComponent={scrollToComponent} />
             </div>
           </Slide>
         </div>
         <div className="w-100 position-relative z-0" onClose={handleClose}>
           <main>
             <div id={theme} onClick={handleClose}>
-              <Home isActive={activeComponentId === "home"} />
-              <About isActive={activeComponentId === "about"} />
-              <TechStack isActive={activeComponentId === "exprience"} />
-              <Projects isActive={activeComponentId === "projects"} />
-              <Contact isActive={activeComponentId === "contact"} />
+              <Home id="home" />
+              <About id="about" />
+              <TechStack id="techstack" />
+              <Projects id="projects" />
+              <Contact id="contact" />
             </div>
           </main>
         </div>
