@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 import Zoom from "react-reveal/Zoom";
 import { useState } from "react";
 
-const Menus = ({
-  homePage,
-  aboutPage,
-  expriencePage,
-  projectsPage,
-  contactPage,
-}) => {
+const Menus = ({ scrollToComponent }) => {
   return (
     <>
       <div className="menu d-flex flex-column">
@@ -26,19 +20,34 @@ const Menus = ({
         </Zoom>
 
         <div className="menu-container nav-items d-flex flex-column gap-3 mt-5 align-items-center text-center ">
-          <div className="nav-item w-100" onClick={homePage}>
+          <div
+            className="nav-item w-100"
+            onClick={() => scrollToComponent("home")}
+          >
             <Link className="nav-link">Home</Link>
           </div>
-          <div className="nav-item w-100" onClick={aboutPage}>
+          <div
+            className="nav-item w-100"
+            onClick={() => scrollToComponent("about")}
+          >
             <Link className="nav-link">About-Education</Link>
           </div>
-          <div className="nav-item w-100" onClick={expriencePage}>
+          <div
+            className="nav-item w-100"
+            onClick={() => scrollToComponent("techstack")}
+          >
             <Link className="nav-link">TechStack-Experience</Link>
           </div>
-          <div className="nav-item w-100" onClick={projectsPage}>
+          <div
+            className="nav-item w-100"
+            onClick={() => scrollToComponent("projects")}
+          >
             <Link className="nav-link">Projects</Link>
           </div>
-          <div className="nav-item w-100" onClick={contactPage}>
+          <div
+            className="nav-item w-100"
+            onClick={() => scrollToComponent("contact")}
+          >
             <Link className="nav-link">Contact</Link>
           </div>
         </div>
